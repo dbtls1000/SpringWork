@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+C:\bizwork\SpringWork\.metadata\.plugins\org.eclipse.jdt.core
+3337757515.index
+768270864.index
+711119062.index
+1824453887.index
+886813675.index
+2173165271.index
+955319811.index
+1577448097.index
+905778965.index
+1600885017.index
+3008342216.index
+778815853.index
+447393250.index
+158660337.index
+2143230079.index
+730468891.index
+4069336450.index
+1660588185.index
