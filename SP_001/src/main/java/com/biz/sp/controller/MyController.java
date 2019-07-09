@@ -56,6 +56,10 @@ public class MyController {
 		model.addAttribute("tel",st_tel);
 		return "sthome";
 	}
+	/*
+	 * 입력 form에서 method를 POST로 지정하면
+	 * Requesrmethod.POST로 설정한 메서드가 정보를 수신한다.
+	 */
 	@RequestMapping(value="st",method=RequestMethod.POST)
 	public String st_post(String st_name,String st_tel,Model model) {
 		
