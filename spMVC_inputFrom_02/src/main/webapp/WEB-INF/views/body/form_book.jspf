@@ -1,0 +1,97 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <style>
+    	*{
+    		box-sizing: border-box;
+    	}
+    	fieldset{
+    		width:50%;
+    		margin:10px auto;
+    		border-radius: 4px;
+    	}
+    	legend{
+    		font-weight: bold;
+    		color: blue;
+    	}
+    	div.in-box{
+    		display: flex;
+    		margin: 3px;
+    	}
+    	div.in-box label{
+    		display: block;
+    		min-width: 80px;/* 화면이 커질때는 자동설정, 작아질때는 80px까지만 축소 */
+    		text-align: right;
+    		margin: 5px;
+    		font-size: 16px;
+    		font-weight: bold;
+    		
+    	}
+    	div.in-box input{
+    		display: block;
+    		width:80%;
+    		margin: 5px;
+    		border-radius: 5px;
+    		border: 1px solid #ddd;
+    		padding:3px 5px;
+    	}
+    	div.in-box input:hover{
+    		border:1px solid purple;
+    	}
+    	div.in-box input:focus{
+    		background-color: lightblue;
+    	}
+    	div.btn-box{
+    		display: flex;
+    		justify-content: center;
+    		align-content: center;
+    		padding: 5px;
+    	}
+    	button.btn{
+    		border-radius: 5px;
+    		display: inline-block;
+    		padding: 4px 8px;
+    		margin: 4px 8px
+    	}
+    	/* 오른쪽 아래 흐림 색상 */
+    	button.btn:hover{
+    		box-shadow: 10px 10px 10px grey;
+    	}
+    	button.btn.save{
+    		background-color: blue;
+    		color: white;
+    	}
+    	button.btn.reset{
+    		background-color: green;
+    		color: white;
+    	}
+    	button.btn.list{
+    		background-color: orange;
+    		color: white;
+    	}
+    </style>
+<form method="POST">
+	<fieldset>
+		<legend>도서 정보</legend>
+		<div class="in-box">
+			<label for="b_title">도서명</label>
+			<input type="text" id="b_title" name="b_title">
+		</div>
+		<div class="in-box">
+			<label for="b_comp">출판사</label>
+			<input type="text" id="b_comp" name="b_comp">
+		</div>
+		<div class="in-box">
+			<label for="b_author">저자</label>
+			<input type="text" id="b_author" name="b_author">
+		</div>
+		<div class="in-box">
+			<label for="b_price">가격</label>
+			<input type="text" id="b_price" name="b_price">
+		</div>
+		<div class="btn-box">
+			<button class="btn save">저장</button>
+			<button type="reset" class="btn reset">다시작성</button>
+			<button type="button" class="btn list">목록으로</button>
+		</div>
+	</fieldset>
+</form>
