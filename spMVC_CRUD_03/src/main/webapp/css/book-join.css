@@ -1,0 +1,40 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+fieldset.join{
+    border-radius: 10px;
+    border: 2px solid orange;
+    width: 500px;
+    margin:auto;
+    padding: 0;
+}
+legend{
+    color: blueviolet;
+    font-size: 20px;
+}
+input{
+    display: block;
+    border: 0;
+    border: 1px solid orange;
+    margin: 5px auto;
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+input:hover{
+    background-color: aqua;
+}
+input:focus{
+    background-color: aqua;
+    width: 350px;
+}
+button{
+    border: 0;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 10px 100px; 
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-align: center;
+}

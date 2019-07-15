@@ -6,3 +6,13 @@
 
 7월 12, 2019 16:26:50.58 NEW SESSION
 7월 12, 2019 16:26:50.58 [7268:4960:0712/162650.587:ERROR:browser_process_sub_thread.cc(221)] Waited 16 ms for network service
+
+7월 15, 2019 14:00:44.92 NEW SESSION
+7월 15, 2019 14:00:44.92 [4796:7520:0715/140044.925:ERROR:browser_process_sub_thread.cc(221)] Waited 15 ms for network service
+7월 15, 2019 14:01:08.28 [6940:5484:0715/140108.282:ERROR:browser_process_sub_thread.cc(221)] Waited 39 ms for network service
+
+7월 15, 2019 14:02:15.97 NEW SESSION
+7월 15, 2019 14:02:15.97 [3780:1824:0715/140215.976:ERROR:browser_process_sub_thread.cc(221)] Waited 17 ms for network service
+7월 15, 2019 14:03:45.72 [4944:5376:0715/140345.724:ERROR:browser_process_sub_thread.cc(221)] Waited 25 ms for network service
+7월 15, 2019 15:43:42.30 [4688:3712:0715/154342.302:ERROR:browser_process_sub_thread.cc(221)] Waited 42 ms for network service
+7월 15, 2019 15:45:30.92 [2196:7368:0715/154530.927:ERROR:browser_process_sub_thread.cc(221)] Waited 5 ms for network service
