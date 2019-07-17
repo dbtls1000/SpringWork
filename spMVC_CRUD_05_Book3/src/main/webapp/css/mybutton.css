@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* 버튼의 크기와 여백 등 공통부분 지정 */
+button.bz-btn {
+	display: inline-block;
+	padding: 8px 12px;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+	transition-duration:0.5s;
+}
+button.bz-btn.input{
+	background-color: green;
+	border: 2px solid green;
+	color: white;
+}
+button.bz-btn.save{
+	background-color: blue;
+	border: 2px solid blue;
+	color: white;
+}
+button.bz-btn.reset{
+	background-color: orange;
+	border: 2px solid orange;
+	color: white;
+}
+button.bz-btn.list{
+	background-color: cyan;
+	border: 2px solid cyan;
+	color: white;
+}
+button.bz-btn.delete{
+	background-color: red;
+	border: 2px solid red;
+	color: white;
+}
+button.bz-btn:hover{
+	background-color: white;
+	color:black;
+	border: 2px solid blue;
+	box-shadow: 10px 10px 10px lightgreen;
+}
+div.btn-box{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+div.btn-box.center{
+	justify-content: center;
+}
