@@ -34,7 +34,7 @@
 		)
 	</insert>
 	
-	<update id="update" parameterType="MemoVO"">
+	<update id="update" parameterType="MemoVO">
 		UPDATE tbl_memo SET
 			MO_DATE = ${mo_date},
 			MO_TIME = ${mo_time},
