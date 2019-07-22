@@ -5,7 +5,25 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-07-16T18:53:03Z</updated>
+  <updated>2019-07-19T07:42:45Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Azul CTO Gil Tene on Java, JVMs, garbage collection, and a ton more</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/07/19/a-bootiful-podcast-azul-cto-gil-tene-on-java-jvms-garbage-collection-and-a-ton-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-07-19:3747</id>
+    <updated>2019-07-19T07:42:45Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of a Bootiful Podcast! In this week I&amp;rsquo;m joined by my old friend, Azul CTO, Gil Tene as we discuss Java, JVMs, garbage collection, and a ton more in this extra packed 90 minute-plus episode. &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://twitter.com/GilTene"&gt;Gil on Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.azul.com/"&gt;Azul Systems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.azul.com/products/zing/"&gt;Zing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/653361302&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - July 16, 2019</title>
     <link rel="alternate" href="https://spring.io/blog/2019/07/16/this-week-in-spring-july-16-2019" />
@@ -1037,39 +1055,6 @@ dependencies {&#xD;
   &lt;li&gt;Woohoo! Check out the latest release by &lt;a href="https://spring.io/blog/2019/06/18/spring-session-corn-m2-and-spring-session-bean-sr6-released"&gt;Vedran Pavi? announcing Spring Session Corn-M2 and Spring Session Bean-SR6 Released&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://pivotal.io/pivotal-spring-runtime"&gt;Want support for OpenJDK, Spring, and Apache Tomcat?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tools 4.3.0 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/06/21/spring-tools-4-3-0-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2019-06-21:3727</id>
-    <updated>2019-06-21T18:00:08Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-&lt;p&gt;I am happy to announce the 4.3.0 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;
-&lt;p&gt;Highlights from this release include:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse Theia vs Atom)&lt;/em&gt; Eclipse Theia now officially supported, Atom support deprecated&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; improvement: project classpath notifications now happen in batch on startup to further optimize performance and job load on the Eclipse side&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; improvement: symbols are now being re-created if dependent types change&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: Slow code completion takes more than a 1 sec. (&lt;a href="https://github.com/spring-projects/sts4/issues/293"&gt;#293&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: content-assist for Spring XML config files now working again in VS Code and Theia&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: Anonymous inner type beans don&amp;rsquo;t have boot hints&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(CF Manifest)&lt;/em&gt; fixed: CF manifest editor supports manifest files with number of instances set to zero&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; fixed: Added support for &lt;code&gt;vars&lt;/code&gt; property in task step&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: quickly restarting apps in boot dashboard multiple times could cause failures&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2019-06-21-430-release"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2019-06-21-430-release&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Spring Tools 4.3.1 is scheduled to be released in late July 2019.&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;P.S.: Due to a system outage, the update to the tools web page will take a little longer, please go to &lt;a href="https://github.com/spring-projects/sts4/wiki/Installation"&gt;https://github.com/spring-projects/sts4/wiki/Installation&lt;/a&gt; in the meantime for details about the new Theia packages.&lt;/em&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
