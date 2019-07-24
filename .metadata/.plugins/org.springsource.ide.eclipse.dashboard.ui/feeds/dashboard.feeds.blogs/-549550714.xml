@@ -5,7 +5,31 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-07-19T07:42:45Z</updated>
+  <updated>2019-07-23T13:18:10Z</updated>
+  <entry>
+    <title>This Week in Spring - July 23, 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/07/23/this-week-in-spring-july-23-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-07-23:3748</id>
+    <updated>2019-07-23T13:18:10Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I concluded my time in Portland, OR, for OSCON on Sunday, went to Chicago for the epic Chicago, IL Cloud Conf yesterday; today I am in Denver, CO, for meetings; and then Wednesday I am off to Burlington, MA for the SpringOne Tour 2019 event. We&amp;rsquo;ve got some good stuff this week so let&amp;rsquo;s get to it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Hi Spring fans! In last week&amp;rsquo;s episode of &lt;a href="https://spring.io/blog/2019/07/19/a-bootiful-podcast-azul-cto-gil-tene-on-java-jvms-garbage-collection-and-a-ton-more"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talk to Azul CTO Gil Tene on Java, JVMs, garbage collection, and a ton more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;There&amp;rsquo;s an interesting new feature on &lt;code&gt;master&lt;/code&gt; for Spring Cloud Gateway giving &lt;a href="https://github.com/spring-cloud/spring-cloud-gateway/pull/785#issuecomment-513988787"&gt;improved details about your routes in the Actuator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out how the Dutch government uses &lt;a href="https://www.cloudfoundry.org/blog/dutch-government-uses-cloud-foundry-enhance-user-experience/"&gt;Cloud Foundry to enhance users experience&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;It&amp;rsquo;s finally here! Check out the new support for the &lt;a href="https://content.pivotal.io/pivotal-announcements/pivotal-makes-kubernetes-easier-for-developers-and-operators?utm_campaign=pr-pivotal-makes-kubernetes-easier-q219&amp;utm_source=twitter&amp;utm_medium=social&amp;utm_content=1562979455"&gt;Cloud Foundry PAS running on Kubernetes&lt;/a&gt;. Here&amp;rsquo;s another post with details from our partners over at VMWare &lt;a href="https://blogs.vmware.com/cloudnative/2019/07/16/pas-on-kubernetes-improves-the-developer-experience/"&gt;on how PAS on Kubernetes improves the developer experience&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A nice post on the Okta blog on how to &lt;a href="https://developer.okta.com/blog/2019/07/17/monitoring-with-actuator"&gt;monitor your Java applications with the Spring Boot Actuator &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://springonetour.io/2019/burlington"&gt;Have you registered for the Burlington, MA installment of the SpringOne Tour&lt;/a&gt;?&lt;/li&gt;
+  &lt;li&gt;An interesting &lt;a href="https://www.youtube.com/watch?v=-wruptabpq4&amp;feature=share"&gt;video on creating REST APIs with Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;InfoQ has a nice post on &lt;a href="https://www.infoq.com/news/2019/07/spring-initializr-tool-updated/?itm_source=presentations_about_Spring-Boot&amp;itm_medium=link&amp;itm_campaign=Spring-Boot"&gt;the updates to the Spring Initializr tool&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I liked this post by Andriy Redko on &lt;a href="https://dzone.com/articles/testing-spring-boot-conditionals-the-sane-way"&gt;testing Spring Boot &lt;code&gt;Conditional&lt;/code&gt;s&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out Rajesh Bjojwani&amp;rsquo;s look at the &lt;a href="https://dzone.com/articles/pcf-26-feature-app-revisions"&gt;feature called App Revisions in Pivotal Cloud Foundry 2.6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Azul CTO Gil Tene on Java, JVMs, garbage collection, and a ton more</title>
     <link rel="alternate" href="https://spring.io/blog/2019/07/19/a-bootiful-podcast-azul-cto-gil-tene-on-java-jvms-garbage-collection-and-a-ton-more" />
@@ -1023,38 +1047,6 @@ dependencies {&#xD;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - June 25, 2019</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/06/25/this-week-in-spring-june-25-2019" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-06-25:3728</id>
-    <updated>2019-06-25T19:06:06Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of This Week in Spring. Today I&amp;rsquo;m in beautiful Tampla, Fl, where I got to talk to a wonderful Pivotal customer today. Now I&amp;rsquo;m at TPA airport preparing to board for Paris, France, for JHipsterConf. &lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve got a ton to cover so let&amp;rsquo;s get to it! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;I just want to remind people that the majority of the Spring team is sponsored by the company Pivotal, an open-source powerhouse that sponsors among other things Spring, Cloud Foundry, a Kubernetes distribution, RabbitMQ, Jasmine, Apache Geode, Apache Tomcat, and a ton of other things. We&amp;rsquo;ve also got a deep bench in building software development tools including things like Pivotal Tracker. Want &lt;a href="https://pivotal.io/why-pivotal"&gt;to learn more&lt;/a&gt;?&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/21/spring-tools-4-3-0-released"&gt;Spring Tools 4.3.0 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/21/a-bootiful-podcast-ibm-s-pratik-patel-on-java-functions-as-a-service-cloud-infrastructure-spring-and-devnexus"&gt;A Bootiful Podcast: IBM&amp;rsquo;s Pratik Patel on Java, Functions-as-a-service, cloud infrastructure, Spring and Devnexus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/20/spring-tool-suite-3-9-9-released"&gt;Spring Tool Suite 3.9.9 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/19/cve-2019-11272-spring-security-4-2-13-released"&gt;CVE-2019-11272: Spring Security 4.2.13 Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/19/spring-tips-distributed-locks-with-spring-integration"&gt;Spring Tips: Distributed Locks with Spring Integration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/19/java-cfenv-1-1-ga-released"&gt;Java CFEnv 1.1 GA Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/19/spring-boot-2-2-0-m4"&gt;Spring Boot 2.2.0.M4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/19/spring-boot-2-1-6-released"&gt;Spring Boot 2.1.6 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I love this article by Pivotal&amp;rsquo;s Brian McClain and Ben Wilcock &lt;a href="https://content.pivotal.io/practitioners/getting-started-with-spring-cloud-gateway-3"&gt;on using Spring Cloud Gateway&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.openservicebrokerapi.org/blog/2019/06/21/announcing-open-service-broker-api-v2-15"&gt;Announcing the Open Service Broker API, v 2.15&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This is pretty interesting: it&amp;rsquo;s a sample demonstrating Atomikos&amp;rsquo; Logcloud integration with the Spring Boot Atomikos JTA starter. &lt;a href="https://github.com/atomikos/spring-boot-sample-jta-atomikos-logcloud"&gt;It&amp;rsquo;s a project showing how easy it is to do XA with clustered, cloud-native transaction logging and recovery.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Wow! I can&amp;rsquo;t believe I almost missed this one. It&amp;rsquo;s an awesome post by Jagdish Mirani on using Spring for Apache Geode. Apache Geode is a distributed data-grid sort of like Hazelcast, Oracle Coherence, etc. It is the open-source distribution of what we sell as Pivotal Gemfire. It&amp;rsquo;s also got every thing you could want: distribution, high speed replication, continuous queries, WAN gateways, etc.&lt;/li&gt;
-  &lt;li&gt;Nice post about &lt;a href="https://thenewstack.io/what-home-depot-can-teach-devops-and-anyone-else/"&gt;how Home Depot can teach DevOops (and everyone else)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Running Cypress tests with TestContainers for a &lt;a href="https://wimdeblauwe.wordpress.com/2019/06/15/running-cypress-tests-with-testcontainers-for-a-spring-boot-with-thymeleaf-application/"&gt;Spring Boot with Thymeleaf application &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Woohoo! Check out the latest release by &lt;a href="https://spring.io/blog/2019/06/18/spring-session-corn-m2-and-spring-session-bean-sr6-released"&gt;Vedran Pavi? announcing Spring Session Corn-M2 and Spring Session Bean-SR6 Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://pivotal.io/pivotal-spring-runtime"&gt;Want support for OpenJDK, Spring, and Apache Tomcat?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
