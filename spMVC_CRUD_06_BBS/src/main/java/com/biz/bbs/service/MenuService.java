@@ -6,12 +6,21 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.biz.bbs.mapper.MenuDao;
 import com.biz.bbs.model.MenuDto;
 
 @Service
 public class MenuService {
+		
+		@Autowired
+		MenuDao menuDao;
 	
 		List<MenuDto> menuList;
+		
+		public List<MenuDto> getDBMenu(){
+			List<MenuDto> menuList = menuDao.getAllMenu();
+			return menuList;
+		}
 		
 		@Autowired
 		public void makeList() {
