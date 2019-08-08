@@ -16,9 +16,10 @@
 	</bean>
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="/WEB-INF/spring/appServlet/mybatis/mybatis-config.xml"/>
 	</bean>
 	<tx:annotation-driven/>
-	<bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	<mybatis-spring:scan base-package="com.biz.bbs.mapper"/>

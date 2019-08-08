@@ -51,21 +51,27 @@ public class BbsService {
 		return bbsDto;
 	}
 	
-	
-	public int delete(long bbs_seq) {
-		// TODO Auto-generated method stub
-		int ret = bDao.delete(bbs_seq);
-		return ret;
-	}
 	public BbsReqDto findBySeq(long bbs_seq) {
 		// TODO Auto-generated method stub
 		BbsReqDto bbsReqDto = bDao.findBySeq(bbs_seq);
 		return bbsReqDto;
 	}
+	
 	public int update(BbsReqDto bbsReqDto) {
 		// TODO Auto-generated method stub
 		int ret = bDao.update(bbsReqDto);
 		
+		return ret;
+	}
+	
+	public int delete(long bbs_seq) {
+		// TODO Auto-generated method stub
+		//첨부파일삭제
+		// int file_ret = afService.files_delete(bbs_seq);
+		
+		// 게시글을 삭제하면 두 테이블이 참조 무결성 관계이므로 
+		// 첨부파일 목록은 자동으로 삭제된다.
+		int ret = bDao.delete(bbs_seq);
 		return ret;
 	}
 }

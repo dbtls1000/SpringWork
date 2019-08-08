@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.biz.bbs.model.MenuDto;
 import com.biz.bbs.service.MenuService;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 /**
  * Handles requests for the application home page.
  */
@@ -26,6 +29,7 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(HttpSession httpSession, Model model) {
+		log.debug("여기는 홈 메서드 입니다");
 		List<MenuDto> menuList = menuService.getDBMenu();
 		httpSession.setAttribute("MENUS",menuList);
 		

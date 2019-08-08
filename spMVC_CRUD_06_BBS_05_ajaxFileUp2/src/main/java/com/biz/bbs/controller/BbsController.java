@@ -153,22 +153,6 @@ public class BbsController {
 		return "redirect:/bbs/list";
 	}
 	
-	@RequestMapping(value="/delete",method=RequestMethod.GET)
-	public String delete(@RequestParam long bbs_seq,Model model) {
-		
-		bbsService.delete(bbs_seq);
-		return "redirect:/bbs/list";
-	}
-	
-	@ResponseBody
-	@RequestMapping(value="/file_delete")
-	public String file_delete(long file_seq) {
-		
-		boolean okDelete = afService.file_delete(file_seq);
-		
-		if(okDelete) return "OK";
-		else return "FAIL";
-	}
 	/*
 	 * PathVariable
 	 * Get 방식으로 서버에 데이터를 보낼때
@@ -209,6 +193,25 @@ public class BbsController {
 		log.debug("main_seq : " + bbsReqDto.getBbs_main_seq());
 		bbsService.insert(bbsReqDto);
 		sStatus.setComplete();
+		return "redirect:/bbs/list";
+	}
+	
+//	@RequestMapping(value="/delete",method=RequestMethod.GET)
+//	public String delete(@RequestParam long bbs_seq,Model model) {
+//		
+//		bbsService.delete(bbs_seq);
+//		return "redirect:/bbs/list";
+//	}
+	
+	/*
+	 * 게시글을 삭제하면
+	 * 1.첨부파일확인 > 첨부파일삭제
+	 * 2.첨부파일 table 정보삭제
+	 * 3.게시글 삭제
+	 */
+	@RequestMapping(value="/delete/{bbs_seq}",method=RequestMethod.GET)
+	public String delete(@PathVariable long bbs_seq) {
+		int ret = bbsService.delete(bbs_seq);
 		return "redirect:/bbs/list";
 	}
 	

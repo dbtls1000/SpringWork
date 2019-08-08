@@ -8,6 +8,7 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
@@ -89,10 +90,17 @@ public class AjaxFileService {
 		}
 		return false;
 	}
-
+	
+	/*
+	 * mybatis에게 transaction방식으로 다중 쿼리를 실행하라는 어노테이션
+	 */
+	@Transactional
 	public int insert(BbsReqDto bbsReqDto) {
 		// TODO Auto-generated method stub
 		List<String> bbs_files = bbsReqDto.getBbs_files();
+		
+		if(bbs_files == null) return -1;
+		
 		for(String file_name : bbs_files) {
 			// UUID를 제거하고 origin이름을 추출
 			long bbs_seq = bbsReqDto.getBbs_seq();
@@ -108,6 +116,25 @@ public class AjaxFileService {
 //							.file_origin_name(file_name.substring(37))
 //							.file_bbs_seq(bbsReqDto.getBbs_seq()).build());
 		}
+		return 0;
+	}
+
+	/*
+	 * 첨부파일을 삭제하는 절차
+	 * 1. tbl_bbs_file에서 첨부파일 목록 추출
+	 * 2. 해당하는 실제 파일을 삭제
+	 * 3. table에 해당 정보 삭제
+	 */
+	public int files_delete(long bbs_seq) {
+		// TODO Auto-generated method stub
+		List<FileVO> fileList = fileDao.finByBbsSeq(bbs_seq);
+		for(FileVO fileVO : fileList) {
+			//1.File객체생성
+			File delFile = new File(upLoadFolder, fileVO.getFile_name());
+			//2.실제파일을 삭제
+			if(delFile.exists()) delFile.delete();
+		}
+		int ret = fileDao.deletes(bbs_seq);
 		return 0;
 	}
 }

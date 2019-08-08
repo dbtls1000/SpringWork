@@ -23,6 +23,12 @@ public interface FileDao {
 	@Delete(" DELETE FROM tbl_bbs_file WHERE file_seq = #{file_seq} ")
 	public void delete(long file_seq);
 	
+	@Select(" SELECT * FROM tbl_bbs_file WHERE file_bbs_seq = #{bbs_seq} ")
+	public List<FileVO> finByBbsSeq(long bbs_seq);
+	
+	@Delete(" DELETE FROM tbl_bbs_file WHERE file_bbs_seq = #{bbs_seq} ")
+	public int deletes(long bbs_seq);
+	
 	
 	
 }
