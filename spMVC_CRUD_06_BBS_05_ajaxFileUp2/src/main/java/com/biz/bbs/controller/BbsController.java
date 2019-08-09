@@ -123,7 +123,7 @@ public class BbsController {
 		if(memberVO == null) {
 			model.addAttribute("LOGIN_MSG","LOGIN");
 			return "redirect:/member/login";
-		}
+		} 
 		
 		BbsDto bbsDto = bbsService.getContent(bbs_seq);
 		if(!memberVO.getM_userid().equalsIgnoreCase(bbsDto.getBbs_auth())) {

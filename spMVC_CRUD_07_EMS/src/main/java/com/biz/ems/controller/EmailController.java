@@ -55,8 +55,10 @@ public class EmailController {
 						BindingResult result,
 						Model model) {
 		
-		String fileName = fService.fileUo(file1);
-		emailVO.setEms_file1(fileName);
+		String file_name1 = fService.fileUp(file1);
+		emailVO.setEms_file1(file_name1);
+		String file_name2 = fService.fileUp(file1);
+		emailVO.setEms_file2(file_name2);
 		
 		xMailService.sendMail(emailVO);
 		

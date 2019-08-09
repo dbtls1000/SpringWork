@@ -11,7 +11,7 @@ public class FileService {
 	
 	private final String upLoadFolder = "c:/bizwork/upload";
 	
-	public String fileUo(MultipartFile file) {
+	public String fileUp(MultipartFile file) {
 		String fileName = file.getOriginalFilename();
 		
 		File saveFile = new File(upLoadFolder,fileName);
